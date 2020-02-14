@@ -32,8 +32,14 @@ export default {
   justify-content: center;
 
   &-icon {
+    cursor: pointer;
     width: 8rem;
     height: 8rem;
+
+    &:hover {
+      transition: 0.8s;
+      opacity: 0.5;
+    }
   }
 }
 </style>

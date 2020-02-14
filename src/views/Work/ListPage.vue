@@ -1,15 +1,11 @@
 <template>
-  <section class="work">
+  <section class="work-page">
     <div class="contents">
-      <img src="/img/card_01.png" alt="">
-      <img src="/img/card_02.png" alt="">
-      <img src="/img/card_03.png" alt="">
-      <img src="/img/card_04.png" alt="">
-      <img src="/img/card_05.png" alt="">
-      <img src="/img/card_06.png" alt="">
-      <img src="/img/card_07.png" alt="">
-      <img src="/img/card_08.png" alt="">
-      <img src="/img/card_09.png" alt="">
+      <template v-for="(work, index) in works" >
+        <router-link :to="`/work/${work.link}`" :key="index">
+          <img :src="`/img/${work.image.path}`" :alt="work.image.name">
+        </router-link>
+      </template>
     </div>
     <Pageup/>
   </section>
@@ -18,17 +14,23 @@
 <script>
 // @ is an alias to /src
 import Pageup from '@/components/Pageup'
+import works from '@/assets/json/works.json'
 
 export default {
-  name: 'Work',
+  name: 'Page',
   components: {
     Pageup
-  }
+  },
+  data() {
+    return {
+      works: works.contents
+    }
+  },
 }
 </script>
 
 <style lang="scss" scoped>
-.work {
+.work-page {
   .contents {
     margin: 20.3rem 0 17rem;
     display: grid;

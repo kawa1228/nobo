@@ -8,6 +8,7 @@
             "image": {
                 "alt": "lipton",
                 "path": "/img/card_01.png",
+                "header": "/img/header_card_01.png",
                 "next": ""
             }
         },
@@ -19,6 +20,7 @@
             "image": {
                 "alt": "lipton",
                 "path": "/img/card_02.png",
+                "header": "",
                 "next": "/img/next_card_02.png"
             }
         },
@@ -30,6 +32,7 @@
             "image": {
                 "alt": "lipton",
                 "path": "/img/card_03.png",
+                "header": "",
                 "next": "/img/next_card_03.png"
             }
         }

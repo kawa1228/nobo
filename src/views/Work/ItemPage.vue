@@ -1,10 +1,15 @@
 <template>
-  <section class="work-item-page">
+  <section class="work-item-page flex-center">
+    <h1>{{ card.title }}</h1>
+    <p>{{ card['sub-title'] }}</p>
+    <template v-if="card.image.header">
+      <img class="header-image" :src="card.image.header" :alt="card.image.alt">
+    </template>
     <component :is="setComponent"/>
     <Pageup class="pageup"/>
     <template v-if="nextCard">
       <router-link :to="`/work/${nextCardId}`">
-        <img class="next-image" :src="nextCard.image.next" alt="">
+        <img class="next-image" :src="nextCard.image.next" :alt="nextCard.image.alt">
       </router-link>
     </template>
   </section>
@@ -35,6 +40,10 @@ export default {
       const workComponent = this.works[workId].component;
       return workComponent;
     },
+    card() {
+      const workId = this.$route.params.work_id;
+      return this.works[workId];
+    },
     nextCardId() {
       const workId = this.$route.params.work_id;
       return Number(workId) + 1
@@ -53,7 +62,7 @@ export default {
   .pageup {
     margin: 8rem 0;
   }
-  .next-image {
+  img {
     width: 100%;
   }
 }

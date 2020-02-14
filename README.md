@@ -1,5 +1,6 @@
 # NOBO
 eunaさんポートフォリオ
+#### https://nobo-24ebf.firebaseapp.com/
 
 ## Versions
 * Node.js v12.16.0
@@ -38,7 +39,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 * [vue-svg-loader - npm](https://www.npmjs.com/package/vue-svg-loader)
 * [vueinview - npm](https://www.npmjs.com/package/vueinview)
 
-## Workが増えた場合
+## Workが増えた場合の必要手順
 
 * src/assets/json/works.json
 work一覧ページで表示するデータをjsonに入力
@@ -51,3 +52,16 @@ WorkItems配下にコンポーネントを追加し、詳細ページで表示�
 
 * src/views/Work/ListPage.vue
 cardのanimationの設定を追加
+
+## deploy
+### Firebase Hosting
+* firebase console
+https://console.firebase.google.com/
+
+```
+yarn global add firebase-tools
+firebase login
+firebase init
+firebase use --add
+firebase deploy
+```

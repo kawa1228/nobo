@@ -39,6 +39,20 @@ export default {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 4.3rem;
 
+    .link {
+      animation-name: fade-up;
+
+      // 0.5秒ごと
+      animation-duration: 1s;
+
+      &:nth-child(2) {
+        animation-duration: 1.5s;
+      }
+      &:nth-child(3) {
+        animation-duration: 2s;
+      }
+    }
+
     img {
       width: 100%;
     }

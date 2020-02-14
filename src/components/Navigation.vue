@@ -1,14 +1,8 @@
 <template>
   <nav class="navigation">
     <ul class="list">
-      <li class="item">
-        <router-link to="/work">WORK</router-link>
-      </li>
-      <li class="item">
-        <router-link to="/about">ABOUT</router-link>
-      </li>
-      <li class="item">
-        <router-link to="/contact">CONTACT</router-link>
+      <li class="item" v-for="(page, index) in pages" :key="index">
+        <router-link :to="page.link">{{ page.name }}</router-link>
       </li>
     </ul>
   </nav>
@@ -16,7 +10,16 @@
 
 <script>
 export default {
-  name: 'Navigation'
+  name: 'Navigation',
+  data() {
+    return {
+      pages: [
+        { name: 'WORK', link: '/work' },
+        { name: 'ABOUT', link: '/about' },
+        { name: 'CONTACT', link: '/contact' },
+      ]
+    }
+  }
 }
 </script>
 

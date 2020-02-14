@@ -46,5 +46,8 @@ work一覧ページで表示するデータをjsonに入力
 * src/components/WorkItems
 WorkItems配下にコンポーネントを追加し、詳細ページで表示するコンテンツを追記
 
-* src/views/Work/Detail.vue
+* src/views/Work/ItemPage.vue
 作成したコンポーネントのpathを追記
+
+* src/views/Work/ListPage.vue
+cardのanimationの設定を追加

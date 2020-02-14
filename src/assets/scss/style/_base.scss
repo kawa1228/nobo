@@ -19,6 +19,12 @@ body {
     color: $color-text-main;
     background-color: $color-background;
 }
+ul {
+    list-style: none;
+}
+a {
+    color: $color-text-main;
+}
 
 // 幅ごとの設定
 @include screen-mq(pc) {

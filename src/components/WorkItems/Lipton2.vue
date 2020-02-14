@@ -1,7 +1,7 @@
 <template>
-  <div class="work-item">
+  <article class="work-item">
     lipton 2
-  </div>
+  </article>
 </template>
 
 <script>

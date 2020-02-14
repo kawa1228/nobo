@@ -1,6 +1,6 @@
 <template>
   <article class="work-item">
-    lipton 2
+    <div>lipton 2 の記事がここに入ります</div>
   </article>
 </template>
 

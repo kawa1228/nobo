@@ -1,22 +1,25 @@
 <template>
   <section class="work-item-page flex-center">
-    <!-- title -->
-    <h1>{{ card.title }}</h1>
-    <p class="sub-title">{{ card['sub-title'] }}</p>
-    <hr class="border">
-    <!-- header image -->
-    <template v-if="card.image.header">
-      <img class="header-image" :src="card.image.header" :alt="card.image.alt">
+    <template v-if="card">
+      <!-- title -->
+      <h1>{{ card.title }}</h1>
+      <p class="sub-title">{{ card['sub-title'] }}</p>
+      <hr class="border">
+      <!-- header image -->
+      <template v-if="card.image.header">
+        <img class="header-image" :src="card.image.header" :alt="card.image.alt">
+      </template>
+      <!-- contents -->
+      <component :is="setComponent"/>
+      <Pageup class="pageup"/>
+      <!-- next card -->
+      <template v-if="nextCard">
+        <a class="next-link" :href="`/work/${nextCardId}`">
+          <img class="next-image" :src="nextCard.image.next" :alt="nextCard.image.alt">
+        </a>
+      </template>
     </template>
-    <!-- contents -->
-    <component :is="setComponent"/>
-    <Pageup class="pageup"/>
-    <!-- next card -->
-    <template v-if="nextCard">
-      <a class="next-link" :href="`/work/${nextCardId}`">
-        <img class="next-image" :src="nextCard.image.next" :alt="nextCard.image.alt">
-      </a>
-    </template>
+    <p v-else>コンテンツがありません</p>
   </section>
 </template>
 

@@ -5,6 +5,7 @@ import WorkListPage from '../views/Work/ListPage.vue'
 import WorkItemPage from '../views/Work/ItemPage.vue'
 import AboutPage from '../views/AboutPage.vue'
 import ContactPage from '../views/ContactPage.vue'
+import NotFound from '../components/NotFound.vue'
 
 Vue.use(VueRouter)
 
@@ -34,6 +35,10 @@ const routes = [
     name: 'contact',
     component: ContactPage
   },
+  {
+    path: '*',
+     component: NotFound
+}
 ]
 
 const router = new VueRouter({

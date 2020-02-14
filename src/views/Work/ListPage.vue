@@ -1,6 +1,7 @@
 <template>
   <section class="work-page">
     <div class="contents">
+      <!-- card list -->
       <template v-for="(work, index) in works" >
         <router-link class="link" :to="`/work/${work.id}`" :key="index">
           <img :src="work.image.path" :alt="work.image.alt">

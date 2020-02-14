@@ -1,12 +1,16 @@
 <template>
   <section class="work-item-page flex-center">
+    <!-- title -->
     <h1>{{ card.title }}</h1>
     <p>{{ card['sub-title'] }}</p>
+    <!-- header image -->
     <template v-if="card.image.header">
       <img class="header-image" :src="card.image.header" :alt="card.image.alt">
     </template>
+    <!-- contents -->
     <component :is="setComponent"/>
     <Pageup class="pageup"/>
+    <!-- next card -->
     <template v-if="nextCard">
       <router-link :to="`/work/${nextCardId}`">
         <img class="next-image" :src="nextCard.image.next" :alt="nextCard.image.alt">

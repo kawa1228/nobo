@@ -1,6 +1,6 @@
 <template>
   <div class="pageup">
-    <PageupIcon class="pageup-icon"/>
+    <PageupIcon class="pageup-icon" @click="toScrollTop"/>
   </div>
 </template>
 
@@ -11,6 +11,15 @@ export default {
   name: 'Pageup',
   components: {
     PageupIcon
+  },
+  methods: {
+    toScrollTop() {
+      const options = {
+        top: 0,
+        behavior: "smooth"
+      }
+      window.scrollTo(options);
+    }
   }
 }
 </script>

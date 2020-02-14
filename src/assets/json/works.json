@@ -7,8 +7,8 @@
             "component": "Lipton1",
             "image": {
                 "alt": "lipton",
-                "path": "/img/card_01.png",
-                "header": "/img/header_card_01.png",
+                "path": "/img/work/01/main.png",
+                "header": "/img/work/01/header.png",
                 "next": ""
             }
         },
@@ -19,9 +19,9 @@
             "component": "Lipton2",
             "image": {
                 "alt": "lipton",
-                "path": "/img/card_02.png",
+                "path": "/img/work/02/main.png",
                 "header": "",
-                "next": "/img/next_card_02.png"
+                "next": "/img/work/02/next.png"
             }
         },
         "3": {
@@ -31,9 +31,9 @@
             "component": "Lipton3",
             "image": {
                 "alt": "lipton",
-                "path": "/img/card_03.png",
+                "path": "/img/work/03/main.png",
                 "header": "",
-                "next": "/img/next_card_03.png"
+                "next": "/img/work/03/next.png"
             }
         }
     }

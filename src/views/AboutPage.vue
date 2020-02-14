@@ -1,6 +1,6 @@
 <template>
-  <div class="about-page">
-    <h1>This is an about page</h1>
+  <div class="about-page flex-center">
+    <h1>Aboutページ</h1>
   </div>
 </template>
 

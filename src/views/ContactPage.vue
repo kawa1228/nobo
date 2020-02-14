@@ -1,6 +1,6 @@
 <template>
-  <div class="contact-page">
-    <h1>This is an contact page</h1>
+  <div class="contact-page flex-center">
+    <h1>Contactページ</h1>
   </div>
 </template>
 

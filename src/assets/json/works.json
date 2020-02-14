@@ -1,0 +1,31 @@
+{
+    "contents": [
+        {
+            "title": "LIPTON",
+            "subTitle": "Promotion Website Design",
+            "link": "Lipton1",
+            "image": {
+                "path": "card_01.png",
+                "name": "lipton"
+            }
+        },
+        {
+            "title": "LIPTON2",
+            "subTitle": "Promotion Website Design",
+            "link": "Lipton2",
+            "image": {
+                "path": "card_02.png",
+                "name": "lipton"
+            }
+        },
+        {
+            "title": "LIPTON3",
+            "subTitle": "Promotion Website Design",
+            "link": "Lipton3",
+            "image": {
+                "path": "card_03.png",
+                "name": "lipton"
+            }
+        }
+    ]
+}

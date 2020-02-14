@@ -1,13 +1,22 @@
 // 共通のスタイル
+@font-face {
+    font-family: 'Futura PT Medium';
+    src: url('~@/assets/fonts/FuturaPT-Medium.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Futura PT Bold';
+    src: url('~@/assets/fonts/FuturaPT-Bold.ttf') format('truetype');
+}
+
 html {
     font-size: 62.5%;
 }
 body {
-    font-family: $default-font-family;
+    font-family: 'Futura PT Medium', $default-font-family;
     font-size: $default-font-size;
     line-height: 2.4rem;
     letter-spacing: 0.3rem;
-    color: $color-theme-black;
+    color: $color-text-main;
 }
 
 // 幅ごとの設定

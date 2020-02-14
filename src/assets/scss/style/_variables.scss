@@ -6,10 +6,12 @@ $default-font-size: 1.6rem;
 $default-font-weight: 700;
 
 // カラー
-$color-theme-white: #fff;
-$color-theme-gray: #F4F3F4;
-$color-theme-black: #333;
-$color-theme-yellow: #FBDC4F;
+$color-text-accent: #FFF;
+$color-text-main: #D0D0D0;
+$color-text-sub: #939393;
+
+$color-border: #939393;
+$color-background: #000;
 
 // ディレクトリ
 $img-dir: '/img/';

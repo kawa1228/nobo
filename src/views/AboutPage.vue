@@ -1,14 +1,17 @@
 <template>
-  <div class="contact">
-    <h1>This is an contact page</h1>
+  <div class="about-page">
+    <h1>This is an about page</h1>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
+export default {
+  name: 'AboutPage'
+}
 </script>
 
 <style lang="scss" scoped>
-.contact {
+.about-page {
 }
 </style>

@@ -26,8 +26,8 @@ export default {
   justify-content: space-between;
 
   .logo {
-    width: 160px;
-    height: 42px;
+    width: 12.3rem;
+    height: 7.6rem;
   }
 }
 </style>

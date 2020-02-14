@@ -1,13 +1,13 @@
 <template>
   <nav class="navigation">
     <ul class="list">
-      <li>
+      <li class="item">
         <router-link to="/work">WORK</router-link>
       </li>
-      <li>
+      <li class="item">
         <router-link to="/about">ABOUT</router-link>
       </li>
-      <li>
+      <li class="item">
         <router-link to="/contact">CONTACT</router-link>
       </li>
     </ul>
@@ -25,6 +25,9 @@ export default {
 .navigation {
   .list {
     display: flex;
+    .item {
+      margin-left: 7.9rem;
+    }
   }
 }
 </style>

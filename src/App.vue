@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div class="app">
     <Header/>
     <router-view/>
   </div>
@@ -18,5 +18,8 @@ export default {
   }
 }
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
+.app {
+  padding: 6.2rem 7.6rem;
+}
 </style>

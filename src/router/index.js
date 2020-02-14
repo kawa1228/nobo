@@ -1,9 +1,10 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
-import Work from '../views/Work.vue'
-import About from '../views/About.vue'
-import Contact from '../views/Contact.vue'
+import HomePage from '../views/HomePage.vue'
+import WorkListPage from '../views/Work/ListPage.vue'
+import WorkItemPage from '../views/Work/ItemPage.vue'
+import AboutPage from '../views/AboutPage.vue'
+import ContactPage from '../views/ContactPage.vue'
 
 Vue.use(VueRouter)
 
@@ -11,22 +12,27 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component: Home
+    component: HomePage
   },
   {
     path: '/work',
     name: 'work',
-    component: Work
+    component: WorkListPage
+  },
+  {
+    path: '/work/:work_name',
+    name: 'work-item',
+    component: WorkItemPage
   },
   {
     path: '/about',
     name: 'about',
-    component: About
+    component: AboutPage
   },
   {
     path: '/contact',
     name: 'contact',
-    component: Contact
+    component: ContactPage
   },
 ]
 

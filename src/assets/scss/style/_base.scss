@@ -1,0 +1,19 @@
+// 共通のスタイル
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: $default-font-family;
+    font-size: $default-font-size;
+    line-height: 2.4rem;
+    letter-spacing: 0.3rem;
+    color: $color-theme-black;
+}
+
+// 幅ごとの設定
+@include screen-mq(pc) {
+}
+@include screen-mq(tab) {
+}
+@include screen-mq(sp) {
+}

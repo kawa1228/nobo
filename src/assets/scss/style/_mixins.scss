@@ -1,0 +1,6 @@
+// メディアクエリ
+@mixin screen-mq($key) {
+    @media #{map-get($mq, $key)} {
+        @content;
+    }
+}

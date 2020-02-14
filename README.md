@@ -37,3 +37,14 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ### Recommended
 * [vue-svg-loader - npm](https://www.npmjs.com/package/vue-svg-loader)
 * [vueinview - npm](https://www.npmjs.com/package/vueinview)
+
+## Workが増えた場合
+
+* src/assets/json/works.json
+work一覧ページで表示するデータをjsonに入力
+
+* src/components/WorkItems
+WorkItems配下にコンポーネントを追加し、詳細ページで表示するコンテンツを追記
+
+* src/views/Work/Detail.vue
+作成したコンポーネントのpathを追記

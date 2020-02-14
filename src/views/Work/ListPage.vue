@@ -2,8 +2,8 @@
   <section class="work-page">
     <div class="contents">
       <template v-for="(work, index) in works" >
-        <router-link :to="`/work/${work.link}`" :key="index">
-          <img :src="`/img/${work.image.path}`" :alt="work.image.name">
+        <router-link class="link" :to="`/work/${work.id}`" :key="index">
+          <img :src="work.image.path" :alt="work.image.alt">
         </router-link>
       </template>
     </div>
@@ -17,7 +17,7 @@ import Pageup from '@/components/Pageup'
 import works from '@/assets/json/works.json'
 
 export default {
-  name: 'Page',
+  name: 'ListPage',
   components: {
     Pageup
   },
@@ -25,7 +25,7 @@ export default {
     return {
       works: works.contents
     }
-  },
+  }
 }
 </script>
 
@@ -34,7 +34,7 @@ export default {
   .contents {
     margin: 20.3rem 0 17rem;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: repeat(auto-fill, minmax(1fr));
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 4.3rem;
 

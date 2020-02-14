@@ -16,11 +16,11 @@ const routes = [
   },
   {
     path: '/work',
-    name: 'work',
+    name: 'work-list',
     component: WorkListPage
   },
   {
-    path: '/work/:work_name',
+    path: '/work/:work_id',
     name: 'work-item',
     component: WorkItemPage
   },

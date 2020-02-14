@@ -13,9 +13,9 @@
     <Pageup class="pageup"/>
     <!-- next card -->
     <template v-if="nextCard">
-      <router-link :to="`/work/${nextCardId}`">
+      <a class="next-link" :href="`/work/${nextCardId}`">
         <img class="next-image" :src="nextCard.image.next" :alt="nextCard.image.alt">
-      </router-link>
+      </a>
     </template>
   </section>
 </template>
@@ -77,6 +77,10 @@ export default {
   }
   img {
     width: 100%;
+  }
+  .next-link:hover {
+    transition: 0.8s;
+    opacity: 0.5;
   }
 }
 </style>

@@ -1,6 +1,8 @@
 <template>
   <header class="header">
-    <Logo class="logo"/>
+      <router-link to="/">
+        <Logo class="logo"/>
+      </router-link>
     <Navigation/>
   </header>
 </template>

@@ -43,6 +43,14 @@ export default {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 4.3rem;
 
+    // デバイスに合わせて表示する列数を変える
+    @include screen-mq(tab) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @include screen-mq(sp) {
+      grid-template-columns: 1fr;
+    }
+
     .link {
       position: relative;
       animation-name: fade-up;

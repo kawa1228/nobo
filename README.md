@@ -40,14 +40,14 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## Workが増えた場合の必要手順
 
-* src/assets/json/works.json
-work一覧ページで表示するデータをjsonに入力
+1: src/assets/json/works.json
+* work一覧ページで表示するデータをjsonに入力
 
-* src/components/WorkItems
-WorkItems配下にコンポーネントを作成し、詳細ページで表示するコンテンツを追記
+2: src/components/WorkItems
+* WorkItems配下にコンポーネントを作成し、詳細ページで表示するコンテンツを追記
 
-* src/views/Work/ItemPage.vue
-作成したコンポーネントのpathを追記
+3: src/views/Work/ItemPage.vue
+* 作成したコンポーネントのpathを追記
 
 ## deploy
 ### Firebase Hosting

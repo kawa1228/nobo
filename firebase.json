@@ -11,15 +11,15 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "headers": [
+      {
+        "source": "**/*.@(jpg|jpeg|gif|png)",
+        "headers": [{
+          "key": "Cache-Control",
+          "value": "max-age=604800"
+        }]
+      }
     ]
-  },
-  "headers": [
-    {
-      "source": "**/*.@(jpg|jpeg|gif|png)",
-      "headers": [{
-        "key": "Cache-Control",
-        "value": "max-age=604800"
-      }]
-    }
-  ]
+  }
 }

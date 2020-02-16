@@ -30,6 +30,10 @@ export default {
     display: flex;
     .item {
       margin-left: 7.9rem;
+
+      &:first-child {
+        margin-left: 0;
+      }
     }
   }
 }

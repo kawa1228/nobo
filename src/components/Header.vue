@@ -27,6 +27,10 @@ export default {
   align-items: center;
   justify-content: space-between;
 
+  @include screen-mq(tab) {
+    flex-direction: column;
+  }
+
   .logo {
     width: 12.3rem;
     height: 7.6rem;

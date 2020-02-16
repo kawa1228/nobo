@@ -18,6 +18,9 @@
           <img class="next-image" :src="nextCard.image.next" :alt="nextCard.image.alt">
         </a>
       </template>
+      <template v-else-if="nextCard">
+        <a class="next-link" :href="`/work/${nextCardId}`">> next work</a>
+      </template>
     </template>
     <p v-else>コンテンツがありません</p>
   </section>
@@ -36,6 +39,9 @@ export default {
     'Lipton1': () => import('@/components/WorkItems/Lipton1'),
     'Lipton2': () => import('@/components/WorkItems/Lipton2'),
     'Lipton3': () => import('@/components/WorkItems/Lipton3'),
+    'Lipton4': () => import('@/components/WorkItems/Lipton4'),
+    'Lipton5': () => import('@/components/WorkItems/Lipton5'),
+    'Lipton6': () => import('@/components/WorkItems/Lipton6')
   },
   data() {
     return {

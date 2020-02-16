@@ -1,5 +1,5 @@
 <template>
-  <section class="work-page">
+  <section class="list-page">
     <div class="contents">
       <!-- card list -->
       <template v-for="(work, index) in works" >
@@ -35,7 +35,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.work-page {
+.list-page {
   .contents {
     margin: 20.3rem 0 17rem;
     display: grid;

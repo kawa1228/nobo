@@ -44,10 +44,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 * work一覧ページで表示するデータをjsonに入力
 
 2: src/components/WorkItems
-* WorkItems配下にコンポーネントを作成し、詳細ページで表示するコンテンツを追記
-
-3: src/views/Work/ItemPage.vue
-* 作成したコンポーネントのpathを追記
+* コンポーネントを新規作成作成（※コンポーネント名は1で入力したデータのnameと同一にする）
 
 ## deploy
 ### Firebase Hosting

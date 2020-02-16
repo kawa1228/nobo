@@ -11,7 +11,7 @@
     <div class="contents">
       <!-- card list -->
       <template v-for="(work, index) in works" >
-        <router-link class="link" :to="`/work/${work.id}`" :key="index">
+        <router-link class="link" :to="`/work/${work.name}`" :key="index">
           <div class="work-mask">
             <span class="title text-head-1">{{ work.title }}</span>
             <span class="sub-title">{{ work['sub-title'] }}</span>

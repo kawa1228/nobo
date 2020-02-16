@@ -21,7 +21,7 @@ const routes = [
     component: WorkListPage
   },
   {
-    path: '/work/:work_id',
+    path: '/work/:work_name',
     name: 'work-item',
     component: WorkItemPage
   },

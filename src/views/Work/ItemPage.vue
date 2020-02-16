@@ -17,16 +17,16 @@
         <img class="header-image" :src="card.image.header" :alt="card.image.alt">
       </template>
       <!-- contents -->
-      <component :is="setComponent" :card="card"/>
+      <component :is="componentName" :card="card"/>
       <Pageup class="pageup"/>
       <!-- next card -->
       <template v-if="nextCard && nextCard.image.next">
-        <a class="next-link" :href="`/work/${nextCardId}`">
+        <a class="next-link" :href="`/work/${nextCard.name}`">
           <img class="next-image" :src="nextCard.image.next" :alt="nextCard.image.alt">
         </a>
       </template>
       <template v-else-if="nextCard">
-        <a class="next-link" :href="`/work/${nextCardId}`">> next work</a>
+        <a class="next-link" :href="`/work/${nextCard.name}`">> next work</a>
       </template>
     </template>
     <p v-else>コンテンツがありません</p>
@@ -41,37 +41,45 @@ import works from '@/assets/json/works.json'
 export default {
   name: 'WorkItemPage',
   components: {
-    Pageup,
-    // 新しくworkが増えたら追加
-    'Lipton1': () => import('@/components/WorkItems/Lipton1'),
-    'Lipton2': () => import('@/components/WorkItems/Lipton2'),
-    'Lipton3': () => import('@/components/WorkItems/Lipton3'),
-    'Lipton4': () => import('@/components/WorkItems/Lipton4'),
-    'Lipton5': () => import('@/components/WorkItems/Lipton5'),
-    'Lipton6': () => import('@/components/WorkItems/Lipton6')
+    Pageup
   },
   data() {
     return {
       works: works.contents
     }
   },
+  beforeCreate: function () {
+    // パラメータ名と同一の記事詳細コンポーネントを読み込む
+    const componentName = this.$route.params.work_name;
+    try {
+      const workItem = require(`@/components/WorkItems/${componentName}`)
+      this.$options.components[componentName] = workItem.default
+    } catch (error) {
+      console.error("そんなページは存在しません。正しいURLでアクセスしてください！")
+    }
+
+  },
   computed: {
-    setComponent() {
-      const workId = this.$route.params.work_id;
-      const workComponent = this.works[workId].component;
-      return workComponent;
+    componentName() {
+      const componentName = this.$route.params.work_name;
+      return componentName;
     },
     card() {
-      const workId = this.$route.params.work_id;
-      return this.works[workId];
+      if (!this.componentName) return;
+      return this.works[this.componentName];
     },
     nextCardId() {
-      const workId = this.$route.params.work_id;
-      return Number(workId) + 1
+      if (!this.card) return;
+      const currentCardId = this.card.id;
+      const nextCardId = Number(currentCardId) + 1;
+      return nextCardId;
     },
     nextCard() {
-      if (this.works[this.nextCardId] == null) return null;
-      const nextCard = this.works[this.nextCardId];
+      let nextCard;
+      for (let name in this.works) {
+        if (this.works[name].id !== this.nextCardId) continue;
+        nextCard = this.works[name];
+      }
       return nextCard;
     }
   }

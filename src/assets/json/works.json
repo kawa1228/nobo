@@ -1,10 +1,11 @@
 {
+    "注意点": "nameはコンポーネントと同一にしてください",
     "contents": {
-        "1": {
+        "Lipton1": {
             "id": 1,
             "title": "LIPTON1",
             "sub-title": "Promotion Website Design",
-            "component": "Lipton1",
+            "name": "Lipton1",
             "image": {
                 "alt": "lipton",
                 "path": "/img/work/01/main.png",
@@ -18,11 +19,11 @@
                 "Product Management": "Euna Choi, Euna Choi"
             }
         },
-        "2": {
+        "Lipton2": {
             "id": 2,
             "title": "LIPTON2",
             "sub-title": "Promotion Website Design",
-            "component": "Lipton2",
+            "name": "Lipton2",
             "image": {
                 "alt": "lipton",
                 "path": "/img/work/02/main.png",
@@ -30,11 +31,11 @@
                 "next": "/img/work/02/next.png"
             }
         },
-        "3": {
+        "Lipton3": {
             "id": 3,
             "title": "LIPTON3",
             "sub-title": "Promotion Website Design",
-            "component": "Lipton3",
+            "name": "Lipton3",
             "image": {
                 "alt": "lipton",
                 "path": "/img/work/03/main.png",
@@ -42,11 +43,11 @@
                 "next": "/img/work/03/next.png"
             }
         },
-        "4": {
+        "Lipton4": {
             "id": 4,
             "title": "LIPTON4",
             "sub-title": "Promotion Website Design",
-            "component": "Lipton4",
+            "name": "Lipton4",
             "image": {
                 "alt": "lipton",
                 "path": "/img/work/04/main.png",
@@ -54,11 +55,11 @@
                 "next": ""
             }
         },
-        "5": {
+        "Lipton5": {
             "id": 5,
             "title": "LIPTON5",
             "sub-title": "Promotion Website Design",
-            "component": "Lipton5",
+            "name": "Lipton5",
             "image": {
                 "alt": "lipton",
                 "path": "/img/work/05/main.png",
@@ -66,11 +67,11 @@
                 "next": ""
             }
         },
-        "6": {
+        "Lipton6": {
             "id": 6,
             "title": "LIPTON6",
             "sub-title": "Promotion Website Design",
-            "component": "Lipton6",
+            "name": "Lipton6",
             "image": {
                 "alt": "lipton",
                 "path": "/img/work/06/main.png",

@@ -18,7 +18,7 @@
 
 <script>
 export default {
-  name: 'Lipton',
+  name: 'Lipton1',
   props: {
     card: {
       type: Object,

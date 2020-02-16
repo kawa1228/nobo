@@ -63,7 +63,7 @@ export default {
       position: relative;
       animation-name: fade-up;
 
-      // 1ページのcard最大表示数を9とする
+      // 最大9のcardを0.5秒ごとフェードインさせる
       $max-display-card: 9;
       $animation-duration: 1;
       // 初期値

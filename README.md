@@ -47,11 +47,16 @@ firebase deploy
 
 ## Workが増えた場合の必要手順
 
-1: src/assets/json/works.json
-* work一覧ページで表示するデータをjsonに入力
+1: データの作成
+* src/assets/json/works.jsonにwork一覧ページで表示するデータを入力
 
-2: src/components/WorkItems
-* コンポーネントを新規作成作成（※コンポーネント名は1で入力したデータのnameと同一にする）
+2: コンポーネントを新規作成
+* src/components/WorkItems配下にファイルを作成
+* ※コンポーネント名は1で入力したデータのnameと同一にする
+
+3: 記事に画像を入れたい場合
+* public/img/work/[記事id]/sample.png に画像を格納
+* コンポーネント側では `<img src="/img/work/[記事id]/sample.png">` で使用可能
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).

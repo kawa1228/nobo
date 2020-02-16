@@ -48,7 +48,7 @@ export default {
       works: works.contents
     }
   },
-  beforeCreate: function () {
+  beforeCreate() {
     // パラメータ名と同一の記事詳細コンポーネントを読み込む
     const componentName = this.$route.params.work_name;
     try {

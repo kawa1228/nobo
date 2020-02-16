@@ -49,8 +49,19 @@ firebase deploy
 
 1: データの作成
 * src/assets/json/works.jsonにwork一覧ページで表示するデータを入力
+* ※オブジェクトのkeyとnameの値は同一にする（下記Sample部分）
+    * example:
+    ```
+    "contents": {
+        "Sample": {
+            "name": "Sample",
+            .
+            .
+            .
+        }
+    }
 
-2: コンポーネントを新規作成
+2: コンポーネントの新規作成
 * src/components/WorkItems配下にファイルを作成
 * ※コンポーネント名は1で入力したデータのnameと同一にする
 

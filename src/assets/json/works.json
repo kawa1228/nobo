@@ -35,6 +35,42 @@
                 "header": "",
                 "next": "/img/work/03/next.png"
             }
+        },
+        "4": {
+            "id": 4,
+            "title": "LIPTON4",
+            "sub-title": "Promotion Website Design",
+            "component": "Lipton4",
+            "image": {
+                "alt": "lipton",
+                "path": "/img/work/04/main.png",
+                "header": "/img/work/04/header.png",
+                "next": ""
+            }
+        },
+        "5": {
+            "id": 5,
+            "title": "LIPTON5",
+            "sub-title": "Promotion Website Design",
+            "component": "Lipton5",
+            "image": {
+                "alt": "lipton",
+                "path": "/img/work/05/main.png",
+                "header": "",
+                "next": ""
+            }
+        },
+        "6": {
+            "id": 6,
+            "title": "LIPTON6",
+            "sub-title": "Promotion Website Design",
+            "component": "Lipton6",
+            "image": {
+                "alt": "lipton",
+                "path": "/img/work/06/main.png",
+                "header": "",
+                "next": ""
+            }
         }
     }
 }

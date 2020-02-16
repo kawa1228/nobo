@@ -10,7 +10,7 @@
         <img class="header-image" :src="card.image.header" :alt="card.image.alt">
       </template>
       <!-- contents -->
-      <component :is="setComponent"/>
+      <component :is="setComponent" :card="card"/>
       <Pageup class="pageup"/>
       <!-- next card -->
       <template v-if="nextCard && nextCard.image.next">

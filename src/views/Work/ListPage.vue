@@ -5,7 +5,7 @@
       <template v-for="(work, index) in works" >
         <router-link class="link" :to="`/work/${work.id}`" :key="index">
           <div class="work-mask">
-            <span class="title">{{ work.title }}</span>
+            <span class="title text-head-1">{{ work.title }}</span>
             <span class="sub-title">{{ work['sub-title'] }}</span>
           </div>
           <img class="work-image" :src="work.image.path" :alt="work.image.alt">
@@ -88,8 +88,6 @@ export default {
       background: rgba($color: $color-background, $alpha: 0.8);
 
       .title {
-        font-size: 5.2rem;
-        font-weight: 700;
         margin-bottom: 1.8rem;
       }
       .sub-title {

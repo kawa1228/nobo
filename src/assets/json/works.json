@@ -10,6 +10,12 @@
                 "path": "/img/work/01/main.png",
                 "header": "/img/work/01/header.png",
                 "next": ""
+            },
+            "credit": {
+                "Sales": "Euna Choi,Euna Choi",
+                "UX Design": "Euna Choi,Euna Choi,Euna Choi   |  UI Design : Euna Choi,Euna Choi",
+                "Development": "Sumisumisan,Euna Choi,Euna Choi,Euna Choi,Euna Choi",
+                "Product Management": "Euna Choi, Euna Choi"
             }
         },
         "2": {

@@ -57,7 +57,6 @@ export default {
     } catch (error) {
       console.error("そんなページは存在しません。正しいURLでアクセスしてください！")
     }
-
   },
   computed: {
     componentName() {

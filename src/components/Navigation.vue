@@ -34,8 +34,13 @@ export default {
 .navigation {
   .list {
     display: flex;
+
     .item {
       margin-left: 7.9rem;
+
+      @include screen-mq(sp) {
+        margin-left: 4rem;
+      }
 
       &:first-child {
         margin-left: 0;

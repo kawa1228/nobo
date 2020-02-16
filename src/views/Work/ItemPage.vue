@@ -13,7 +13,7 @@
       <component :is="setComponent"/>
       <Pageup class="pageup"/>
       <!-- next card -->
-      <template v-if="nextCard">
+      <template v-if="nextCard && nextCard.image.next">
         <a class="next-link" :href="`/work/${nextCardId}`">
           <img class="next-image" :src="nextCard.image.next" :alt="nextCard.image.alt">
         </a>

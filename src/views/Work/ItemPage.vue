@@ -2,7 +2,7 @@
   <section class="work-item-page flex-center">
     <template v-if="card">
       <!-- title -->
-      <h1>{{ card.title }}</h1>
+      <h1 class="text-head-1">{{ card.title }}</h1>
       <p class="sub-title">{{ card['sub-title'] }}</p>
       <hr class="border">
       <!-- header image -->
@@ -67,6 +67,8 @@ export default {
 
 <style lang="scss" scoped>
 .work-item-page {
+  margin: 10rem 0;
+
   .sub-title {
     color: $color-text-sub;
   }

@@ -36,6 +36,11 @@ export default {
     width: 8rem;
     height: 8rem;
 
+    @include screen-mq(tab) {
+      width: 4rem;
+      height: 4rem;
+    }
+
     &:hover {
       transition: 0.8s;
       opacity: 0.5;

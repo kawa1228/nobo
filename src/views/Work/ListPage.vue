@@ -37,7 +37,7 @@ export default {
 <style lang="scss" scoped>
 .list-page {
   .contents {
-    margin: 20.3rem 0 17rem;
+    margin: 10rem 0 17rem;
     display: grid;
     grid-template-rows: repeat(auto-fill, minmax(1fr));
     grid-template-columns: 1fr 1fr 1fr;

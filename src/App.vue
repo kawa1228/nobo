@@ -21,5 +21,9 @@ export default {
 <style lang="scss" scoped>
 .app {
   padding: 6.2rem 7.6rem;
+
+  @include screen-mq(tab) {
+    padding: 2rem;
+  }
 }
 </style>

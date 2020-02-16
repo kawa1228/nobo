@@ -21,7 +21,11 @@ export default {
   margin: 7.4rem 0;
 
   .contents {
-    width: 40%;
+    width: calc(100vw - 40%);
+
+    @include screen-mq(tab) {
+      width: 100%;
+    }
 
     img {
       width: 100%;

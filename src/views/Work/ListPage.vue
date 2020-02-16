@@ -47,16 +47,19 @@ export default {
       position: relative;
       animation-name: fade-up;
 
-      // linkが増えたら追記
-      // worksの最大表示数が決まれば追記しなくてOKになる
-      animation-duration: 1s;
+      // 1ページのcard最大表示数を9とする
+      $max-display-card: 9;
+      $animation-duration: 1;
+      // 初期値
+      animation-duration:  #{$animation-duration}s;
 
-      &:nth-child(2) {
-        animation-duration: 1.5s;
+      @for $index from 1 through $max-display-card {
+        &:nth-child(#{$index}) {
+          animation-duration: #{$animation-duration}s;
+        }
+        $animation-duration: $animation-duration + 0.5;
       }
-      &:nth-child(3) {
-        animation-duration: 2s;
-      }
+
       &:hover {
         .work-mask {
           opacity: 1;

@@ -32,8 +32,7 @@ yarn lint
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### Bootstrap
-空白はBootstrapにて管理
-* [空白ユーティリティ～Bootstrap4移行ガイド](https://cccabinet.jpn.org/bootstrap4/utilities/spacing)
+* [Bootstrap4移行ガイド](https://cccabinet.jpn.org/bootstrap4/#summary)
 
 ### Recommended
 * [vue-svg-loader - npm](https://www.npmjs.com/package/vue-svg-loader)
@@ -45,13 +44,10 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 work一覧ページで表示するデータをjsonに入力
 
 * src/components/WorkItems
-WorkItems配下にコンポーネントを追加し、詳細ページで表示するコンテンツを追記
+WorkItems配下にコンポーネントを作成し、詳細ページで表示するコンテンツを追記
 
 * src/views/Work/ItemPage.vue
 作成したコンポーネントのpathを追記
-
-* src/views/Work/ListPage.vue
-cardのanimationの設定を追加
 
 ## deploy
 ### Firebase Hosting

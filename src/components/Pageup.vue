@@ -1,3 +1,9 @@
+<docs>
+# Pageup コンポーネント
+
+* クリックすると画面上部にスクロールされる
+</docs>
+
 <template>
   <div class="pageup">
     <PageupIcon class="pageup-icon" @click="toScrollTop"/>

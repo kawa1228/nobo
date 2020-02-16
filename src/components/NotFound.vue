@@ -1,3 +1,9 @@
+<docs>
+# Not Found コンポーネント
+
+* ページが存在しない場合表示させるコンポーネント
+</docs>
+
 <template>
   <div class="not-found">
     <h1>ページが見つかりません</h1>

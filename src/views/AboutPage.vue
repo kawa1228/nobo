@@ -1,3 +1,8 @@
+<docs>
+# about ページ
+
+</docs>
+
 <template>
   <div class="about-page flex-center">
     <h1>Aboutページ</h1>

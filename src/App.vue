@@ -1,3 +1,11 @@
+<docs>
+# App
+
+* 最初に読み込まれるvueファイル
+* Headerなど全ページ共通コンポーネントはここに追記
+* router-view部分にrouter/index.jsで指定しているコンポーネントが入る
+</docs>
+
 <template>
   <div class="app">
     <Header/>

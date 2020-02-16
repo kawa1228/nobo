@@ -1,3 +1,10 @@
+<docs>
+# work 詳細ページ
+
+* 各詳細ページを表示するための共通のwrapper部分
+* 詳細はsrc/components/WorkItems/配下のコンポーネントに追記
+</docs>
+
 <template>
   <section class="work-item-page flex-center">
     <template v-if="card">

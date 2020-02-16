@@ -1,3 +1,8 @@
+<docs>
+# contact ページ
+
+</docs>
+
 <template>
   <div class="contact-page flex-center">
     <h1>Contactページ</h1>

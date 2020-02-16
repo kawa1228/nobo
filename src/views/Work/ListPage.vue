@@ -1,3 +1,11 @@
+<docs>
+# work ページ
+
+* work card一覧を表示
+* cardのフェードインアニメーションは最大9まで設定
+* ページネーションは未実装
+</docs>
+
 <template>
   <section class="list-page">
     <div class="contents">
@@ -22,7 +30,7 @@ import Pageup from '@/components/Pageup'
 import works from '@/assets/json/works.json'
 
 export default {
-  name: 'ListPage',
+  name: 'WorkListPage',
   components: {
     Pageup
   },

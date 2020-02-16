@@ -1,3 +1,8 @@
+<docs>
+# Header コンポーネント
+
+</docs>
+
 <template>
   <header class="header">
       <router-link to="/">

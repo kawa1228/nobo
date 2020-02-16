@@ -1,3 +1,8 @@
+<docs>
+# home ページ
+
+</docs>
+
 <template>
   <div class="home-page flex-center">
     <h1>Homeページ</h1>

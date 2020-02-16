@@ -1,3 +1,9 @@
+<docs>
+# Navigation コンポーネント
+
+* 各ページのリンクを表示
+</docs>
+
 <template>
   <nav class="navigation">
     <ul class="list">

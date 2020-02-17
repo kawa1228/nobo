@@ -8,9 +8,9 @@
 
 <template>
   <section class="list-page">
-    <div class="contents">
+    <div v-if="sortWorks" class="contents">
       <!-- card list -->
-      <template v-for="(work, index) in works" >
+      <template v-for="(work, index) in sortWorks" >
         <router-link class="link" :to="`/work/${work.name}`" :key="index">
           <div class="work-mask">
             <span class="title text-head-1">{{ work.title }}</span>
@@ -27,7 +27,8 @@
 <script>
 // @ is an alias to /src
 import Pageup from '@/components/Pageup'
-import works from '@/assets/json/works.json'
+import works from '@/assets/json/works2.json'
+import sortWorks from '@/libs/workUtil.js'
 
 export default {
   name: 'WorkListPage',
@@ -38,7 +39,13 @@ export default {
     return {
       works: works.contents
     }
-  }
+  },
+  computed: {
+    sortWorks() {
+      if (!this.works) return;
+      return sortWorks(this.works);
+    }
+  },
 }
 </script>
 

@@ -36,7 +36,8 @@
 <script>
 // @ is an alias to /src
 import Pageup from '@/components/Pageup'
-import works from '@/assets/json/works.json'
+import works from '@/assets/json/works2.json'
+import sortWorks from '@/libs/workUtil.js'
 
 export default {
   name: 'WorkItemPage',
@@ -59,6 +60,10 @@ export default {
     }
   },
   computed: {
+    sortWorks() {
+      if (!this.works) return;
+      return sortWorks(this.works);
+    },
     componentName() {
       const componentName = this.$route.params.work_name;
       return componentName;

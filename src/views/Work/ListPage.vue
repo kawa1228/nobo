@@ -27,7 +27,7 @@
 <script>
 // @ is an alias to /src
 import Pageup from '@/components/Pageup'
-import works from '@/assets/json/works2.json'
+import works from '@/assets/json/works.json'
 import sortWorks from '@/libs/createWorkUtil.js'
 
 export default {

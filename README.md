@@ -49,6 +49,8 @@ firebase deploy
 
 1: データの作成
 * src/assets/json/works.jsonにwork一覧ページで表示するデータを入力
+* オブジェクトのkeyがurlとなるので、一意にする
+* 一覧ページではidの昇順に表示される
 * ※オブジェクトのkeyとnameの値は同一にする（下記Sample部分）
     * example:
     ```

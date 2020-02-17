@@ -68,23 +68,22 @@ export default {
       const componentName = this.$route.params.work_name;
       return componentName;
     },
+    cardId() {
+      if (!this.card) return;
+      return this.card.id;
+    },
     card() {
       if (!this.componentName) return;
       return this.works[this.componentName];
     },
-    nextCardId() {
-      if (!this.card) return;
-      const currentCardId = this.card.id;
-      const nextCardId = Number(currentCardId) + 1;
-      return nextCardId;
-    },
     nextCard() {
-      let nextCard;
-      for (let name in this.works) {
-        if (this.works[name].id !== this.nextCardId) continue;
-        nextCard = this.works[name];
-      }
-      return nextCard;
+      if (!this.cardId || !this.sortWorks) return;
+      const works = this.sortWorks;
+      // jsonの記述順に左右されないよう配列における現在のcardの次のcardを返す
+      const currentOffset = works.findIndex((work) => work.id == this.cardId);
+      const nextOffset = currentOffset + 1;
+
+      return works[nextOffset];
     }
   }
 }

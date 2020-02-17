@@ -48,10 +48,10 @@ firebase deploy
 ## Workが増えた場合の必要手順
 
 1: データの作成
-* src/assets/json/works.jsonにwork一覧ページで表示するデータを入力
-* オブジェクトのkeyがurlとなるので、一意にする
+* src/assets/json/works.jsonにデータを入力
 * 一覧ページではidの昇順に表示される
-* ※オブジェクトのkeyとnameの値は同一にする（下記Sample部分）
+* オブジェクトのkeyがurlとなるので、一意にする
+* オブジェクトのkeyとnameの値は同一にする
     * example:
     ```
     "contents": {
@@ -62,6 +62,8 @@ firebase deploy
             .
         }
     }
+    ```
+    →この場合、`/work/Sample` がurlとなる
 
 2: コンポーネントの新規作成
 * src/components/WorkItems配下にファイルを作成

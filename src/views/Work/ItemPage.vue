@@ -37,7 +37,7 @@
 // @ is an alias to /src
 import Pageup from '@/components/Pageup'
 import works from '@/assets/json/works2.json'
-import sortWorks from '@/libs/workUtil.js'
+import sortWorks from '@/libs/createWorkUtil.js'
 
 export default {
   name: 'WorkItemPage',

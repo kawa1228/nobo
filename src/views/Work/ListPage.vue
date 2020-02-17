@@ -62,18 +62,19 @@ export default {
     .link {
       position: relative;
       animation-name: fade-up;
+      opacity: 0;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
 
-      // 最大9のcardを0.5秒ごとフェードインさせる
+      // 最大9のcardを0.1秒ごとフェードインさせる
       $max-display-card: 9;
-      $animation-duration: 1;
-      // 初期値
-      animation-duration:  #{$animation-duration}s;
+      $animation-delay: 0;
 
       @for $index from 1 through $max-display-card {
         &:nth-child(#{$index}) {
-          animation-duration: #{$animation-duration}s;
+          animation-delay: #{$animation-delay}s;
         }
-        $animation-duration: $animation-duration + 0.5;
+        $animation-delay: $animation-delay + 0.1;
       }
 
       &:hover {

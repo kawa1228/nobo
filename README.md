@@ -1,6 +1,6 @@
 # NOBO
 eunaさんポートフォリオ
-#### https://nobo-24ebf.firebaseapp.com/
+#### https://nobo-1010.netlify.app/
 
 ## Versions
 * Node.js v12.16.0
